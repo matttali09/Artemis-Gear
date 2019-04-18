@@ -9,6 +9,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { HomeComponent } from './home/home.component';
 import { FeaturedItemsComponent } from './home/featured-items/featured-items.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FeaturedItemsComponent } from './home/featured-items/featured-items.com
     NavBarComponent,
     JumbotronComponent,
     HomeComponent,
-    FeaturedItemsComponent
+    FeaturedItemsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
