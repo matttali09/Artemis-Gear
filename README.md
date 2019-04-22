@@ -1,3 +1,3 @@
 # ArtemisGear
 
-An E-commerce application with mongoDB, Secure login, and Secure Payment
+An E-commerce application with SQL, Secure login, and Secure Payment
