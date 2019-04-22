@@ -1,17 +1,26 @@
 <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
-  [animation]="'none'">
+  [animation]="'slide'">
   <mdb-carousel-item *ngFor="let item of slides; let i = index">
-    <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
+    <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}"
+      *ngFor="let card of item; let cardIndex = index">
       <mdb-card class="my-1">
-        <mdb-card-img [src]="card.img" alt="card.title"></mdb-card-img>
+        <mdb-card-img [src]="card.img" alt="card.title" id="card.id">
+        </mdb-card-img>
+            <div *ngIf="card.sale" class="">
+                <p class="salePercentage">Sale {{card.salePercentage}}%</p>
+            </div>
         <mdb-card-body>
           <mdb-card-title>
             <h4>{{card.title}}</h4>
           </mdb-card-title>
           <p>{{card.description}}</p>
+          <div *ngIf="card.outOfStock" class="">
+              <p class="outOfStock">OUT OF STOCK</p>
+          </div>
           <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>BUY NOW!</a>
         </mdb-card-body>
       </mdb-card>
     </div>
   </mdb-carousel-item>
 </mdb-carousel>
+

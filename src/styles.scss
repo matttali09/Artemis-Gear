@@ -41,6 +41,19 @@
     cursor: pointer;
 }
 
+// card styling
+mdb-card-img img.img-fluid {
+    height: 250px;
+    border-bottom: 1px solid darkgray;
+}
+/* fixes for small screen idk what you doing mbd-bootstrap making 2 out of 3 cards disapear on small screen */
+.d-none {
+    display: block !important;
+}
+.carousel-item.active {
+    overflow: auto
+}
+
 // bottom carousel indicators
 .carousel-multi-item .carousel-indicators li {
     height: 1.25rem;

@@ -1,3 +1,29 @@
-mdb-card-img img.img-fluid {
-    height: 250px;
+// featured items styling
+.mdb-card-img img.img-fluid {
+    position: relative;
 }
+
+.salePercentage {
+    position: absolute;
+    background: orange;
+    color: white;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    outline: 1px dashed white;
+    outline-offset: -10px;
+    transform: rotate(-45deg);
+}
+
+.outOfStock {
+    position: absolute;
+    background: orange;
+    color: white;
+    bottom: 0%;
+    right: 0%;
+    padding: 20px;
+    outline: 1px dashed white;
+    outline-offset: -10px;
+    transform: rotate(-45deg);
+}
+
